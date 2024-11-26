@@ -6,8 +6,8 @@
     "price": 99.99,
     "category": "Electronics",
     "stock": 50,
-    "createdAt": "2024-09-15T10:20:00.000Z",
-    "updatedAt": "2024-10-01T11:45:00.000Z"
+    "createdAt": "2024-11-23T10:20:00.000Z",
+    "updatedAt": "2024-11-26T11:45:00.000Z"
   },
   {
     "id": "6745416624603d1e81ac36e9",
@@ -16,8 +16,8 @@
     "price": 699.99,
     "category": "Electronics",
     "stock": 30,
-    "createdAt": "2024-08-20T09:50:00.000Z",
-    "updatedAt": "2024-09-15T08:35:00.000Z"
+    "createdAt": "2024-11-24T09:50:00.000Z",
+    "updatedAt": "2024-11-26T08:35:00.000Z"
   },
   {
     "id": "674541a724603d1e81ac36ec",
@@ -26,7 +26,7 @@
     "price": 59.99,
     "category": "Sports",
     "stock": 120,
-    "createdAt": "2024-06-05T14:30:00.000Z",
-    "updatedAt": "2024-09-30T16:25:00.000Z"
+    "createdAt": "2024-11-23T14:30:00.000Z",
+    "updatedAt": "2024-11-26T16:25:00.000Z"
   }
 ]
