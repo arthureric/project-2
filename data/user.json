@@ -1,0 +1,33 @@
+[
+    {
+      "id": "1a2b3c4d5e",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "hashedpassword123",
+      "age": 28,
+      "role": "admin",
+      "createdAt": "2023-09-01T08:00:00.000Z",
+      "updatedAt": "2024-10-10T12:30:00.000Z"
+    },
+    {
+      "id": "2b3c4d5e6f",
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "password": "hashedpassword456",
+      "age": 35,
+      "role": "user",
+      "createdAt": "2024-01-15T10:45:00.000Z",
+      "updatedAt": "2024-10-09T09:25:00.000Z"
+    },
+    {
+      "id": "3c4d5e6f7g",
+      "name": "Alice Johnson",
+      "email": "alicejohnson@example.com",
+      "password": "hashedpassword789",
+      "age": 22,
+      "role": "moderator",
+      "createdAt": "2024-05-20T13:10:00.000Z",
+      "updatedAt": "2024-10-08T15:35:00.000Z"
+    }
+  ]
+  
