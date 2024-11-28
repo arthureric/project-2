@@ -2,7 +2,7 @@
 const router = require('express').Router();
 
 
-router.get('/', (req, res) => { res.send('Hello World One');});
+router.get('/', (req, res) => { res.send('Hello Welcome to Our World');});
 
 router.use('/users', require('./usersRoutes'));
 

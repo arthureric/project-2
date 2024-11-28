@@ -1,11 +1,11 @@
 const jwt = require('jsonwebtoken');
 
-// Your secret key
-const secretKey = '9ee32c57220c9b4c63d6ecfa6d01e9e614699c642e7762dc4b7da114e0e2283b4ece838e586d13db781a531ef3baac334940c0e88d5aa37c3f10a7508809b1eb';
+// Your secret key (ensure this is stored in an environment variable in production)
+const secretKey = 'f1a59b4d0ac4487faafee3f5e02e64781c2237b91b3a521c4e0a6b8476f2a3c56e75c47f1bbf718a13e20c451bc902b8f467c5e039acbbd5b529c23798fdc7b9';
 
 // Define a payload (this can include user information)
 const payload = {
-    userId: '12345', // Example user ID
+    userId: '1234567890', // Example user ID
     username: 'exampleUser',
 };
 

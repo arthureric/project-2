@@ -46,12 +46,35 @@ const verifyToken = (req, res, next) => {
     }
 };
 
+// Authentication Route
+app.post('/api/auth/login', (req, res) => {
+    const { username, password } = req.body;
+
+    // Example user validation (replace with database query)
+    const mockUser = { id: 1, username: 'exampleUser', password: 'password123' };
+    if (username === mockUser.username && password === mockUser.password) {
+        const token = jwt.sign(
+            { userId: mockUser.id, username: mockUser.username },
+            process.env.JWT_SECRET,
+            { expiresIn: '1h' }
+        );
+        return res.json({ token });
+    } else {
+        return res.status(401).json({ message: 'Invalid credentials' });
+    }
+});
+
+// Protected Route Example
+app.get('/api/protected', verifyToken, (req, res) => {
+    res.json({ message: 'This is a protected route.', user: req.user });
+});
+
 // Routes setup
 app.use('/api/auth', authRoutes); // Public routes for authentication
 app.use('/api/', verifyToken, userRoutes); // Protected routes for user/products operations, fixed missing route handler
 
 app.get('/', (req, res) => {
-    res.send('Hello Welcome to a New World');
+    res.send('Hello Welcome to Our World');
 });
 
 // Handle non-existent routes and pass to error handler
@@ -69,7 +92,7 @@ app.use((err, req, res, next) => {
 });
 
 // Set port
-const port = process.env.PORT || 5500;
+const port = process.env.PORT || 3000;
 
 // Initialize MongoDB connection and start the server
 mongodb.initDb((err) => {
