@@ -4,7 +4,7 @@ const createError = require('http-errors');
 const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-require('dotenv').config;
+require('dotenv').config(); // Fixed missing function invocation
 const {
     createUserValidation,
     updateUserValidation,
@@ -48,9 +48,7 @@ const verifyToken = (req, res, next) => {
 
 // Routes setup
 app.use('/api/auth', authRoutes); // Public routes for authentication
-app.use('/api/', verifyToken, ); // Protected routes for user/products operations
-
-
+app.use('/api/', verifyToken, userRoutes); // Protected routes for user/products operations, fixed missing route handler
 
 app.get('/', (req, res) => {
     res.send('Hello Welcome to a New World');
